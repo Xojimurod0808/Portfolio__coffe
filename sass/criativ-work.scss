@@ -130,7 +130,7 @@
 
     // modal start 
     .modal-wrapper{
-        display: none;
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -142,7 +142,8 @@
             height: 597px;
             background-color: #FEFCF7;
             position: fixed;
-            top: 0px;
+            top: 13px;
+            z-index: 20;
             .modal__title{
                 display: block;
                 padding: 30px 50px;
@@ -836,7 +837,7 @@
 
 }
 
-@media only screen and (max-width: 375px), (min-width: 450px) {
+@media only screen and (max-width: 375px) {
 
     //assosiy start
     .container{

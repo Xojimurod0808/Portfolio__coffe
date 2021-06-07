@@ -167,7 +167,9 @@
 }
 
 .modal-wrapper {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -193,7 +195,8 @@
   height: 597px;
   background-color: #FEFCF7;
   position: fixed;
-  top: 0px;
+  top: 13px;
+  z-index: 20;
 }
 
 .modal-wrapper .modal .modal__title {
@@ -1019,7 +1022,7 @@
   }
 }
 
-@media only screen and (max-width: 375px), (min-width: 450px) {
+@media only screen and (max-width: 375px) {
   .container {
     max-width: 327px;
     margin: 0 auto;
